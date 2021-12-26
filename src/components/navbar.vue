@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
-    <img src='C:\Users\adity\Documents\GitHub Repositories\climap\src\assets\logo.png' width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src='C:\Users\adity\Documents\GitHub Repositories\climap\src\assets\logo.png' width="30" height="30" class="d-inline-block align-top" alt=".">
     Climap
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

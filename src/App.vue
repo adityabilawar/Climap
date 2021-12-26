@@ -82,7 +82,6 @@ export default {
  
 
 <template>
-
   <navbar />
   <div class="d-flex text-center" style="height: 20vh">
     <div class="m-auto">
