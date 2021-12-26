@@ -3,9 +3,18 @@
 import { computed, ref, onMounted, onUnmounted, watch } from 'vue'
 import { useGeolocation } from './useGeolocation'
 import { Loader } from '@googlemaps/js-api-loader'
+import navbar from './components/navbar.vue'
+//import Modal from './components/Modal.vue'
+/*Won't be able to access api when outside of home so edit credentials using this link:
+https://console.cloud.google.com/apis/credentials?authuser=1&project=mapsapi-314114
+*/ 
 const GOOGLE_MAPS_API_KEY = 'AIzaSyC1COUUe3Uhkj06qQo-_Ha2HwABlyB7qq4'
 export default {
   name: 'App',
+  components: {
+    //Modal //is an html tag <Modal/>
+    navbar //is an html tag <navbar/>
+  },
   setup() {
     const { coords } = useGeolocation()
     const currPos = computed(() => ({
@@ -70,8 +79,11 @@ export default {
   }
 }
 </script>
+ 
 
 <template>
+
+  <navbar />
   <div class="d-flex text-center" style="height: 20vh">
     <div class="m-auto">
       <h4>Your Position</h4>
