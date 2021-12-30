@@ -83,6 +83,8 @@ export default {
 
 <template>
   <navbar />
+  <iframe width="100%" height="720" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/15OKOv"></iframe>
+  <img class="fullscreenIMAGE" src="https://www.nasa.gov/images/content/484444main_firemap-2048x1024.jpg">
   <div class="d-flex text-center" style="height: 20vh">
     <div class="m-auto">
       <h4>Your Position</h4>
@@ -104,5 +106,13 @@ export default {
   </div>
   <div ref="mapDiv" style="width: 100%; height: 80vh" />
 </template>
+
+<style scoped>
+img {
+    display: inline-block;
+    width: 100%; 
+    height: auto;
+}
+</style>
 
 
